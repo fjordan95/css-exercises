@@ -15,7 +15,22 @@ body {
   justify-content: center;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-around;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.bulk {
+  display: flex;
+  flex-direction: column;
+}
+
 .modal {
+  display: flex;
   background: white;
   width: 480px;
   border-radius: 10px;
@@ -23,6 +38,8 @@ body {
 }
 
 .icon {
+  margin: 15px;
+  align-items: left;
   color: royalblue;
   font-size: 26px;
   font-weight: 700;
@@ -33,9 +50,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .close-button {
+  margin-right: 15px;
   background: #eee;
   border-radius: 50%;
   color: #888;
@@ -48,6 +67,15 @@ body {
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+}
+
+.buttons {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.text {
+  margin: 15px 0px;
 }
 
 button {
